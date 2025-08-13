@@ -1,0 +1,160 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: #1e88e5;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header input {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+/* Main layout */
+main {
+    flex: 1;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Medicine list */
+#medicine-list {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.medicine {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.medicine:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.medicine h3 {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.medicine p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1e88e5;
+}
+
+.medicine button {
+    background: #43a047;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.medicine button:hover {
+    background: #2e7d32;
+}
+
+/* Cart */
+#cart {
+    flex: 1;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+#cart h2 {
+    margin-bottom: 15px;
+}
+
+#cart-items {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    background: #f9f9f9;
+    padding: 6px 8px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+.remove-btn {
+    background: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.cart-footer p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#checkout {
+    background: #1e88e5;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+#checkout:hover {
+    background: #1565c0;
+}
+
+/* Footer */
+footer {
+    background: #1e88e5;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
