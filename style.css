@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f8f9fa;
+}
+
+header {
+    background: #007bff;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+header input {
+    padding: 8px;
+    margin-top: 10px;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+#medicine-list {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.medicine {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.medicine button {
+    margin-top: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#cart {
+    flex: 1;
+    background: white;
+    padding: 15px;
+    margin-left: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#cart-items {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+#checkout {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
